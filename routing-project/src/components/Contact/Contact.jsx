@@ -1,48 +1,63 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import "./Contact.css";
 
 function Contact() {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <h1>Contact Me</h1>
-
-      <p>I'd love to hear from you!</p>
-
-      <p>
-        <strong>Name:</strong> Santhosh B S
+    <div className="contact-container">
+      <h2 className="contact-title">Contact Me</h2>
+      <p className="contact-subtitle">
+        Feel free to reach out if you would like to connect or discuss
+        opportunities!
       </p>
 
-      <p>
-        <strong>Email:</strong> santhosh220506@gmail.com
-      </p>
+      <div className="contact-info-box">
+        <p className="contact-row">
+          <strong>Name:</strong> Santhosh B S
+        </p>
+        <p className="contact-row">
+          <strong>Email:</strong>{" "}
+          <a className="contact-link" href="mailto:santhosh220506@gmail.com">
+            santhosh220506@gmail.com
+          </a>
+        </p>
+        <p className="contact-row">
+          <strong>LinkedIn:</strong>{" "}
+          <a
+            className="contact-link"
+            href="https://www.linkedin.com/in/santhoshsekar-bs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            linkedin.com/in/santhoshsekar-bs
+          </a>
+        </p>
+        <p className="contact-row">
+          <strong>GitHub:</strong>{" "}
+          <a
+            className="contact-link"
+            href="https://github.com/santhosh-bs22"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github.com/santhosh-bs22
+          </a>
+        </p>
+      </div>
 
-      <p>
-        <strong>LinkedIn:</strong>{" "}
-        <a
-          href="https://www.linkedin.com/in/santhoshsekar-bs"
-          target="_blank"
-          rel="noreferrer"
+      <div className="contact-btn-group">
+        <button className="contact-btn" onClick={() => navigate("/")}>
+          ← Back to Home
+        </button>
+        <button
+          className="contact-btn contact-btn-outline"
+          onClick={() => navigate("/about")}
         >
-          My LinkedIn Profile
-        </a>
-      </p>
-
-      <p>
-        <strong>GitHub:</strong>{" "}
-        <a
-          href="https://github.com/santhosh-bs22"
-          target="_blank"
-          rel="noreferrer"
-        >
-          My GitHub Profile
-        </a>
-      </p>
-
-      <button onClick={() => navigate("/")}>Go to Home</button>
-
-      <button onClick={() => navigate("/about")}>Go to About</button>
+          ← Back to About Me
+        </button>
+      </div>
     </div>
   );
 }

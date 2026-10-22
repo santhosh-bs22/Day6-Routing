@@ -1,38 +1,87 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import "./About.css";
 
 function About() {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className="about-container">
+      <section className="about-section">
+        <h2>About Me</h2>
+        <p>
+          MERN Stack Developer skilled in React.js, JavaScript, Node.js,
+          Express.js, MongoDB, and Tailwind CSS. Experienced in developing
+          real-world full-stack applications, integrating REST APIs,
+          implementing authentication and role-based access, working with
+          biometric device APIs, and building responsive user interfaces. Strong
+          understanding of frontend and backend development, database
+          operations, API integration, debugging, and collaborative development.
+        </p>
+      </section>
+      <section className="about-section">
+        <h2>My Skills</h2>
+        <ul className="about-skills-list">
+          <li>
+            <strong>Languages:</strong> JavaScript, Java
+          </li>
+          <li>
+            <strong>Frontend:</strong> React.js, Tailwind CSS
+          </li>
+          <li>
+            <strong>Backend:</strong> Node.js, Express.js
+          </li>
+          <li>
+            <strong>Database:</strong> MongoDB
+          </li>
+          <li>
+            <strong>Tools:</strong> Git, GitHub, Figma, Postman
+          </li>
+        </ul>
+      </section>
+      <section className="about-section">
+        <h2>My Projects</h2>
 
-      <h2>Hi, I'm Santhosh B S 👋</h2>
+        <div className="about-project-item">
+          <h3>CineVerse - Movie Website (React)</h3>
+          <p>
+            Built responsive movie browsing platform with multilingual support
+            and trailer integration.
+          </p>
+        </div>
 
-      <p>
-        I'm a Computer Science and Engineering student passionate about web
-        development and software engineering.
-      </p>
+        <div className="about-project-item">
+          <h3>SerenityStays - Hotel Reservation Website</h3>
+          <p>
+            Developed a user-friendly hotel reservation interface with room
+            selection and booking functionality.
+          </p>
+        </div>
 
-      <h3>Education</h3>
-      <p>Computer Science and Engineering — Expected Graduation: 2027</p>
+        <div className="about-project-item">
+          <h3>Weather Website</h3>
+          <p>Built real-time weather application using API integration.</p>
+        </div>
 
-      <h3>Technical Skills</h3>
-      <p>Frontend: HTML, CSS, JavaScript, React.js</p>
-      <p>Backend: Node.js, Express.js</p>
-      <p>Database: MongoDB</p>
-      <p>Tools: Git, GitHub, VS Code</p>
-
-      <h3>My Goal</h3>
-      <p>
-        My goal is to become a skilled Full Stack Developer and build useful,
-        user-friendly web applications.
-      </p>
-
-      <button onClick={() => navigate("/")}>Go to Home</button>
-
-      <button onClick={() => navigate("/contact")}>Go to Contact</button>
+        <div className="about-project-item">
+          <h3>EcomX - E-Commerce Website</h3>
+          <p>
+            Built a full-featured e-commerce platform with product listings,
+            shopping cart functionality, and a user-friendly interface.
+          </p>
+        </div>
+      </section>
+      <div className="about-btn-group">
+        <button className="about-btn" onClick={() => navigate("/contact")}>
+          Go to Contact Page →
+        </button>
+        <button
+          className="about-btn about-btn-outline"
+          onClick={() => navigate("/")}
+        >
+          ← Back to Home
+        </button>
+      </div>
     </div>
   );
 }

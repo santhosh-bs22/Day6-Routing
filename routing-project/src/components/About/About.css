@@ -1,0 +1,86 @@
+.about-container {
+  background: #f7f8f5;
+  padding: 36px;
+  border-radius: 8px;
+}
+
+.about-section {
+  margin-bottom: 28px;
+}
+
+.about-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+.about-section p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.about-skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-skills-list li {
+  padding: 8px 0;
+  color: #374151;
+  font-size: 0.98rem;
+}
+
+.about-project-item {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.about-project-item h3 {
+  font-size: 1.1rem;
+  color: #ff6f00;
+  margin-bottom: 6px;
+}
+
+.about-project-item p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.about-btn {
+  background-color: #ff6f00;
+  color: #ffffff;
+  border: 1px solid #ff6f00;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.about-btn:hover {
+  background-color: #ff6f00;
+}
+
+.about-btn-outline {
+  background-color: transparent;
+  color: #ff6f00;
+  border: 1px solid #ff6f00;
+}
+
+.about-btn-outline:hover {
+  background-color: #f7f8f5;
+}
