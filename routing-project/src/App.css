@@ -9,6 +9,10 @@ body {
   line-height: 1.6;
 }
 
+body.dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+}
+
 .app {
   /* max-width: 1000px; */
   /* margin: 0 auto; */
@@ -51,6 +55,114 @@ body {
   color: #ff6f00;
 }
 
+.toggle {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 6px;
+  transition: all 0.2s ease;
+}
+
+.toggle:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
 .content {
   width: 100%;
+}
+
+.app.dark .navbar {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.app.dark .logo {
+  color: #f8fafc;
+}
+
+.app.dark .nav-links a {
+  color: #cbd5e1;
+}
+
+.app.dark .nav-links a:hover {
+  background: #334155;
+  color: #ff6f00;
+}
+
+.app.dark .toggle {
+  background: #334155;
+  color: #f8fafc;
+  border-color: #475569;
+}
+
+.app.dark .toggle:hover {
+  background: #475569;
+  border-color: #ff6f00;
+}
+
+.app.dark .home-container,
+.app.dark .about-container,
+.app.dark .contact-container {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.app.dark .home-title,
+.app.dark .about-section h2,
+.app.dark .contact-title {
+  color: #f8fafc;
+}
+
+.app.dark .about-section h2,
+.app.dark .contact-title {
+  border-bottom-color: #334155;
+}
+
+.app.dark .home-intro-text,
+.app.dark .about-section p,
+.app.dark .about-project-item p,
+.app.dark .contact-subtitle {
+  color: #94a3b8;
+}
+
+.app.dark .about-skills-list li,
+.app.dark .contact-row {
+  color: #cbd5e1;
+}
+
+.app.dark .about-skills-list li strong,
+.app.dark .contact-row strong {
+  color: #f8fafc;
+}
+
+.app.dark .about-project-item,
+.app.dark .contact-info-box {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.app.dark .home-btn-outline,
+.app.dark .about-btn-outline,
+.app.dark .contact-btn-outline {
+  background: transparent;
+  color: #ff6f00;
+  border-color: #ff6f00;
+}
+
+.app.dark .home-btn-outline:hover,
+.app.dark .about-btn-outline:hover,
+.app.dark .contact-btn-outline:hover {
+  background: #334155;
+  color: #ff8533;
+  border-color: #ff8533;
 }
